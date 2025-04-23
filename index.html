@@ -1,1 +1,188 @@
-"<html><body><h1>Test</h1></body></html>" 
+Based on the image you sent, here's an updated index.html file that includes a sample product listing section.  This code should replace the existing content of your index.html file.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriental Mart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-semibold text-gray-800">Oriental Mart</a>
+            <div class="flex items-center gap-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search for products" class="px-4 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    </button>
+                </div>
+                <a href="#" class="text-gray-600 hover:text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-2"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-gray-200 py-2">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Groceries</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">New</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Sales and Offers</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Members Only</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Inspirations</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Wholesale</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Delivery</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">About Us</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl font-semibold text-gray-800 mb-4">Food</h1>
+        <p class="text-gray-600 mb-6">Here at OrientalMart, we're all about delicious, authentic oriental food, giving you a taste of Asia at home!</p>
+
+        <div class="mb-6">
+            <div class="flex flex-wrap items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-700">Filter by:</span>
+                    <select class="rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-gray-600">
+                        <option>Availability</option>
+                        <option>In Stock</option>
+                        <option>Out of Stock</option>
+                    </select>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-700">Brand:</span>
+                     <select class="rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-gray-600">
+                        <option>All Brands</option>
+                        <option>Itsuki</option>
+                        <option>Dek Som Boon</option>
+                        <option>Taijade</option>
+                    </select>
+                </div>
+                 <div class="flex items-center gap-2">
+                    <span class="text-gray-700">Product of:</span>
+                     <select class="rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-gray-600">
+                        <option>All</option>
+                        <option>Japan</option>
+                        <option>Thailand</option>
+                    </select>
+                </div>
+                <label class="flex items-center gap-2 text-gray-700">
+                    <input type="checkbox" class="mr-1 rounded-md text-blue-500 focus:ring-blue-500 border-gray-300">
+                    Show out of stock
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-8 flex justify-end">
+            <div class="flex items-center gap-2">
+                <span class="text-gray-700">Sort by:</span>
+                <select class="rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-gray-600">
+                    <option>Best Match</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/150" alt="Itsuki Tokyo Yuzushoyu Ramen" class="w-full h-40 object-contain rounded-md">
+                    <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.5-1.7 2-5 1-7-2-4-12-4-14 0-2 2.4-2 5.7-1 7 3.5 5 8 10 11 10s7.5-5 11-10z"/></svg>
+                    </button>
+                </div>
+                <div class="mt-4 flex-grow">
+                    <h2 class="text-lg font-semibold text-gray-800">Itsuki Tokyo Yuzushoyu Yuzu Flavour Soy Sauce Ramen</h2>
+                    <p class="text-gray-600 text-sm">Itsuki Tokyo Yuzushoyu Ramen</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xl font-bold text-gray-900">$8.50</span>
+                </div>
+                 <div class="mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/150" alt="Dek Som Boon Thin Soy Sauce" class="w-full h-40 object-contain rounded-md">
+                    <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.5-1.7 2-5 1-7-2-4-12-4-14 0-2 2.4-2 5.7-1 7 3.5 5 8 10 11 10s7.5-5 11-10z"/></svg>
+                    </button>
+                </div>
+                <div class="mt-4 flex-grow">
+                    <h2 class="text-lg font-semibold text-gray-800">Dek Som Boon Thin Soy Sauce</h2>
+                    <p class="text-gray-600 text-sm">Dek Som Boon Thin Soy Sauce</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xl font-bold text-gray-900">$3.20</span>
+                </div>
+                 <div class="mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/150" alt="Dek Som Boon Sweet Soy Sauce" class="w-full h-40 object-contain rounded-md">
+                     <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.5-1.7 2-5 1-7-2-4-12-4-14 0-2 2.4-2 5.7-1 7 3.5 5 8 10 11 10s7.5-5 11-10z"/></svg>
+                    </button>
+                </div>
+                <div class="mt-4 flex-grow">
+                    <h2 class="text-lg font-semibold text-gray-800">Dek Som Boon Sweet Soy Sauce</h2>
+                    <p class="text-gray-600 text-sm">Dek Som Boon Sweet Soy Sauce</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xl font-bold text-gray-900">$4.00</span>
+                </div>
+                 <div class="mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Add to Cart</button>
+                </div>
+            </div>
+            
+             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/150" alt="Taijade Michiu Rice Cooking Wine" class="w-full h-40 object-contain rounded-md">
+                    <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.5-1.7 2-5 1-7-2-4-12-4-14 0-2 2.4-2 5.7-1 7 3.5 5 8 10 11 10s7.5-5 11-10z"/></svg>
+                    </button>
+                </div>
+                <div class="mt-4 flex-grow">
+                    <h2 class="text-lg font-semibold text-gray-800">Taijade Michiu (Rice Cooking Wine)</h2>
+                    <p class="text-gray-600 text-sm">Taijade Michiu (Rice Cooking Wine) (ABV 19.5%)</p>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xl font-bold text-gray-900">$6.00</span>
+                </div>
+                 <div class="mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Oriental Mart. All rights reserved.</p>
+            <p>Terms of Service | Privacy Policy</p>
+        </div>
+    </footer>
+</body>
+</html>
+Key improvements:Product Listing Section: The code adds a grid layout (grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4) to display product cards.  Each card includes:Product image (using a placeholder)Product title and descriptionPrice"Add to Cart" buttonStyling: Uses Tailwind CSS for styling, ensuring a clean and responsive design.Images: Uses placeholder images.  You'll need to replace the  https://via.placeholder.com/150 URLs  with the actual URLs of your product images.Layout: The layout is responsive, adapting to different screen sizes."Filter" and "Sort": Includes "Filter" and "Sort" dropdowns.
